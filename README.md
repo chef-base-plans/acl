@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.acl?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.acl?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=91&branchName=master)
 
 # acl
 
@@ -39,6 +39,24 @@ will add the following binaries to the PATH:
 * /bin/getfacl
 * /bin/chacl
 * /bin/setfacl
+
+For example:
+
+```bash
+$ hab pkg install core/acl --binlink
+» Installing core/acl
+☁ Determining latest version of core/acl in the 'stable' channel
+→ Found newer installed version (core/acl/2.2.53/20200605142503) than remote version (core/acl/2.2.53/20200305230628)
+→ Using core/acl/2.2.53/20200605142503
+★ Install of core/acl/2.2.53/20200605142503 complete with 0 new packages installed.
+» Binlinking getfacl from core/acl/2.2.53/20200605142503 into /bin
+★ Binlinked getfacl from core/acl/2.2.53/20200605142503 to /bin/getfacl
+» Binlinking chacl from core/acl/2.2.53/20200605142503 into /bin
+★ Binlinked chacl from core/acl/2.2.53/20200605142503 to /bin/chacl
+» Binlinking setfacl from core/acl/2.2.53/20200605142503 into /bin
+★ Binlinked setfacl from core/acl/2.2.53/20200605142503 to /bin/setfacl
+$ 
+```
 
 #### Using an example binary
 
